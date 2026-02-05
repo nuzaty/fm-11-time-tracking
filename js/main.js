@@ -1,6 +1,7 @@
 const DEFAULT_PERIOD = 'weekly';
 
 /* Data fetching & Populating the DOM */
+
 let cards = [];
 
 fetch('/data.json').then((response) => {
@@ -60,7 +61,7 @@ function appendItem(item) {
   const appendTimeFrame = (period, { current, previous }) => {
     const hrs = document.createElement('p');
     hrs.className = 'card__hrs'
-    hrs.setAttribute('data-period', period);
+    hrs.dataset.period = period;
     hrs.textContent = `${current}hrs`
     cardContent.append(hrs);
 
@@ -75,7 +76,7 @@ function appendItem(item) {
 
     const hrsPrev = document.createElement('p');
     hrsPrev.className = 'card__hrs-prev'
-    hrsPrev.setAttribute('data-period', period);
+    hrsPrev.dataset.period = period;
     hrsPrev.textContent = hrsPrevText();
     cardContent.append(hrsPrev);
   };
@@ -95,9 +96,9 @@ function setCardPeriod(card, period) {
     .querySelectorAll('.card__hrs, .card__hrs-prev')
     .forEach(el => {
       if (el.dataset.period === period) {
-        el.setAttribute('data-active', '');
+        el.dataset.active = '';
       } else {
-        el.removeAttribute('data-active');
+        delete el.dataset.active;
       }
     });
 }
@@ -108,7 +109,6 @@ const filter = document.querySelector('.dashboard__filter');
 
 function setDefaultPeriod() {
   const btns = Array.from(filter.querySelectorAll('[data-period]'));
-  console.log(btns);
   const btn = btns.find(el => el.dataset.period === DEFAULT_PERIOD);
   selectPeriod(btn);
 }

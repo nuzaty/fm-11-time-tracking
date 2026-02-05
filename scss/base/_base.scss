@@ -1,0 +1,43 @@
+@use '../abstracts' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  @extend %text-preset-6;
+  background: $color-navy-950;
+  color: $color-navy-200;
+}

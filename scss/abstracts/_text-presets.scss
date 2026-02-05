@@ -1,0 +1,37 @@
+@use 'tokens' as *;
+@use 'media' as *;
+
+@mixin text-preset($family, $size, $weight, $line-height, $letter-spacing: null) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+
+  @if $letter-spacing {
+    letter-spacing: $letter-spacing;
+  }
+}
+
+%text-preset- {
+  &1 {
+    @include text-preset($font-rubik, 3.5rem, $fw-light, 1.1786);
+  }
+  &2 {
+    @include text-preset($font-rubik, 2.5rem, $fw-light, 1.175);
+  }
+  &3 {
+    @include text-preset($font-rubik, 2rem, $fw-light, 1.1875);
+  }
+  &4 {
+    @include text-preset($font-rubik, 1.5rem, $fw-light, 1.1667);
+  }
+  &5-medium {
+    @include text-preset($font-rubik, 1.125rem, $fw-medium, 1.1667);
+  }
+  &5-regular {
+    @include text-preset($font-rubik, 1.125rem, $fw-regular, 1.1667);
+  }
+  &6 {
+    @include text-preset($font-rubik, 0.9375rem, $fw-regular, 1.2);
+  }
+}

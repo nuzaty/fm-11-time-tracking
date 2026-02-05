@@ -1,0 +1,137 @@
+@use '../abstracts' as *;
+@use 'sass:map';
+
+$card-types: (
+  work: (
+    color: $color-orange-300,
+    icon: 'icon-work.svg',
+  ),
+  play: (
+    color: $color-blue-300,
+    icon: 'icon-play.svg',
+  ),
+  study: (
+    color: $color-pink-400,
+    icon: 'icon-study.svg',
+  ),
+  exercise: (
+    color: $color-green-400,
+    icon: 'icon-exercise.svg',
+  ),
+  social: (
+    color: $color-purple-700,
+    icon: 'icon-social.svg',
+  ),
+  self-care: (
+    color: $color-yellow-300,
+    icon: 'icon-self-care.svg',
+  ),
+);
+
+$content-bg: $color-navy-900;
+$content-bg-hover: $color-navy-800;
+
+// Two-tone background to mask border-radius bleed.
+@mixin card-split-bg($top, $bottom: $content-bg) {
+  background: linear-gradient(to bottom, $top 0 50%, $bottom 50% 100%);
+}
+
+$card-header-height: 2.375rem; // match Figma
+
+.card {
+  padding-top: $card-header-height;
+  overflow: hidden;
+  position: relative;
+  border-radius: $card-border-radius;
+
+  @each $name, $data in $card-types {
+    &--#{$name} {
+      @include card-split-bg(map.get($data, color));
+
+      .card__icon {
+        background-image: card-icon($data);
+      }
+
+      &:hover {
+        @include card-split-bg(map.get($data, color), $content-bg-hover);
+      }
+    }
+  }
+
+  // Icon positioning and sizing are visually tuned to match Figma.
+  // Values are perceptual and intentionally not pixel-perfect.
+  &__icon {
+    $max-icon-width: 4.875rem;
+    width: clamp(3.3125rem, 24%, $max-icon-width);
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    top: $card-header-height - $space-400;
+    right: 0;
+    transform: translate(-20%, -20%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    @include from-tablet {
+      // Range: 768 -> 1024
+      width: clamp(3.625rem, -0.125rem + 7.813vw, $max-icon-width);
+    }
+  }
+
+  &__content {
+    background: $content-bg;
+    padding-block: 1.71875rem; // match Figma
+    padding-inline: $space-300;
+    border-radius: $card-border-radius $card-border-radius 0 0;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    row-gap: $space-100;
+
+    &:hover {
+      background: $content-bg-hover;
+    }
+  }
+
+  &__title {
+    @extend %text-preset-5-medium;
+    color: $color-white;
+  }
+
+  &__actions {
+    justify-self: end;
+    cursor: pointer;
+
+    svg {
+      color: $color-navy-200;
+    }
+
+    &:hover {
+      svg {
+        color: $color-white;
+      }
+    }
+  }
+
+  &__hrs {
+    @extend %text-preset-3;
+    color: $color-white;
+    display: none;
+
+    &[data-active] {
+      display: block;
+    }
+  }
+
+  &__hrs-prev {
+    justify-self: end;
+    display: none;
+
+    &[data-active] {
+      display: block;
+    }
+  }
+}

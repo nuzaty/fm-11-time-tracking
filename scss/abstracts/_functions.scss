@@ -1,0 +1,5 @@
+@use 'sass:map';
+
+@function card-icon($data) {
+  @return url('../images/#{map.get($data, icon)}');
+}

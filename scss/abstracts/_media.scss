@@ -1,0 +1,19 @@
+@use 'tokens' as *;
+
+@mixin from-mobile {
+  @media (min-width: $bp-sm) {
+    @content;
+  }
+}
+
+@mixin from-tablet {
+  @media (min-width: $bp-md) {
+    @content;
+  }
+}
+
+@mixin from-desktop {
+  @media (min-width: $bp-lg) {
+    @content;
+  }
+}

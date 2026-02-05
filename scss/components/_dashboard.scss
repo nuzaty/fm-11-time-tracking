@@ -1,0 +1,79 @@
+@use '../abstracts' as *;
+
+.dashboard {
+  display: grid;
+  place-items: center;
+  margin-inline: auto;
+  max-width: $content-max-width;
+  justify-items: stretch;
+  gap: $space-300;
+
+  padding-block: 5.0625rem; // match Figma
+
+  // 16px @ 320px to 24px @ 375px (match Figma)
+  padding-inline: clamp($space-200, -1.909rem + 14.545vw, $space-300);
+
+  @include from-tablet {
+    // 78px @ 768px to 162px @ 1440px (match Figma)
+    padding-inline: clamp(4.875rem, -1.125rem + 12.5vw, 10.125rem);
+  }
+
+  &__context {
+    background: $color-navy-900;
+    border-radius: $card-border-radius; //match Figma
+  }
+
+  &__profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: $space-300;
+    padding-block: $space-400;
+    padding-inline: $space-400;
+    background: $color-purple-600;
+    border-radius: $card-border-radius; //match Figma
+
+    img {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      outline: 3px solid $color-white;
+      object-fit: cover;
+    }
+
+    &-meta {
+      display: flex;
+      flex-direction: column;
+      gap: $space-100;
+
+      h1 {
+        @extend %text-preset-4;
+        color: $color-white;
+      }
+    }
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: center;
+    margin-block: $space-300;
+
+    button {
+      flex: 1 1 0;
+      max-width: 6.8125rem;
+      @extend %text-preset-5-regular;
+      color: $color-purple-500;
+      cursor: pointer;
+
+      &[aria-current='true'] {
+        color: $color-white;
+      }
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: $space-300;
+  }
+}

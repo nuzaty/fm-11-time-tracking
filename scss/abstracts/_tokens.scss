@@ -1,0 +1,41 @@
+/* colors */
+$color-white: hsl(0, 100%, 100%);
+$color-black: hsl(0, 0%, 0%);
+$color-navy-950: hsl(226, 43%, 10%);
+$color-navy-900: hsl(235, 46%, 20%);
+$color-navy-800: hsl(235, 41%, 34%);
+$color-navy-200: hsl(236, 100%, 87%);
+$color-orange-300: hsl(15, 100%, 70%);
+$color-purple-700: hsl(264, 64%, 52%);
+$color-purple-600: hsl(246, 80%, 60%);
+$color-purple-500: hsl(235, 45%, 61%);
+$color-blue-300: hsl(195, 74%, 62%);
+$color-pink-400: hsl(348, 100%, 68%);
+$color-green-400: hsl(145, 58%, 55%);
+$color-yellow-300: hsl(43, 84%, 65%);
+$color-grey-200: hsl(0, 0%, 85%);
+
+/* fonts */
+$font-rubik: 'Rubik', sans-serif;
+$fw-medium: 500;
+$fw-regular: 400;
+$fw-light: 300;
+
+/* spacing */
+$space-0: 0;
+$space-100: 0.5rem;
+$space-200: 1rem;
+$space-300: 1.5rem;
+$space-400: 2rem;
+$space-500: 2.5rem;
+
+/* breakpoints */
+$bp-sm: 23.4375rem;
+$bp-md: 48rem;
+$bp-lg: 64rem;
+$bp-xl: 90rem;
+
+$content-max-width: $bp-xl;
+
+/* common values */
+$card-border-radius: 0.9375rem;

@@ -135,12 +135,17 @@ $card-header-heights: (
     }
 
     @include from-tablet {
-      padding-block: 1.59375rem; // match Figma
-      padding-inline: 1.34375rem; // match Figma
       grid-template-areas:
         'title actions'
         'hrs hrs'
         'hrs-prev hrs-prev';
+      padding-block: 1.59375rem; // match Figma
+      padding-inline: 1.34375rem; // match Figma
+    }
+
+    @include from-desktop {
+      padding-block: 1.9375rem; // match Figma
+      padding-inline: 2.03125rem; // match Figma
     }
   }
 
@@ -184,6 +189,10 @@ $card-header-heights: (
     @include from-tablet {
       @include text-preset(1);
       margin-top: $space-100;
+    }
+
+    @include from-desktop {
+      margin-top: $space-200;
     }
   }
 

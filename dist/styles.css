@@ -463,9 +463,15 @@ body {
 }
 @media (min-width: 48rem) {
   .card__content {
+    grid-template-areas: "title actions" "hrs hrs" "hrs-prev hrs-prev";
     padding-block: 1.59375rem;
     padding-inline: 1.34375rem;
-    grid-template-areas: "title actions" "hrs hrs" "hrs-prev hrs-prev";
+  }
+}
+@media (min-width: 64rem) {
+  .card__content {
+    padding-block: 1.9375rem;
+    padding-inline: 2.03125rem;
   }
 }
 .card__title {
@@ -520,6 +526,11 @@ body {
     /* tablet override (optional) */
     /* desktop override (optional) */
     margin-top: 0.5rem;
+  }
+}
+@media (min-width: 64rem) {
+  .card__hrs {
+    margin-top: 1rem;
   }
 }
 .card__hrs-prev {

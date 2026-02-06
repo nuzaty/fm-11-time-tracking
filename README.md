@@ -12,22 +12,12 @@ Users should be able to:
 
 ### Screenshot
 
-Desktop
-
 ![](./screenshot/desktop.webp)
-
-Tablet
-
-![](./screenshot/tablet.webp)
-
-Mobile
-
-![](./screenshot/mobile.webp)
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: [https://www.frontendmentor.io/solutions/time-tracking-dashboard-using-sass-tFA234OGcm](https://www.frontendmentor.io/solutions/time-tracking-dashboard-using-sass-tFA234OGcm)
+- Live Site URL: [https://nuzaty.github.io/fm-11-time-tracking](https://nuzaty.github.io/fm-11-time-tracking)
 
 ## My process
 

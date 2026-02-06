@@ -3,10 +3,9 @@
 .dashboard {
   display: grid;
   place-items: center;
+  min-height: 100vh;
   margin-inline: auto;
   max-width: $content-max-width;
-  justify-items: stretch;
-  gap: $space-300;
 
   padding-block: 5.0625rem; // match Figma
 
@@ -18,9 +17,31 @@
     padding-inline: clamp(4.875rem, -1.125rem + 12.5vw, 10.125rem);
   }
 
+  @include from-desktop {
+    // 24 @ 1024px to 162px @ 1440px (match Figma)
+    padding-inline: clamp(1.5rem, -19.731rem + 33.173vw, 10.125rem);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-self: stretch;
+    gap: $space-300;
+
+    @include from-desktop {
+      flex-direction: row;
+      gap: $space-400;
+    }
+  }
+
   &__context {
     background: $color-navy-900;
     border-radius: $card-border-radius; //match Figma
+
+    @include from-desktop {
+      flex: 0 0 22.85%;
+      min-width: 0;
+    }
   }
 
   &__profile {
@@ -32,13 +53,27 @@
     padding-inline: $space-400;
     background: $color-purple-600;
     border-radius: $card-border-radius; //match Figma
+    overflow: hidden;
+
+    @include from-desktop {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: start;
+      gap: $space-500;
+      aspect-ratio: 255 / 354;
+    }
 
     img {
-      width: 4rem;
-      height: 4rem;
+      width: 4rem; //match Figma
+      height: 4rem; //match Figma
       border-radius: 50%;
       outline: 3px solid $color-white;
       object-fit: cover;
+
+      @include from-desktop {
+        width: 4.875rem; //match Figma
+        height: 4.875rem; //match Figma
+      }
     }
 
     &-meta {
@@ -46,9 +81,31 @@
       flex-direction: column;
       gap: $space-100;
 
+      @include from-desktop {
+        gap: 0;
+      }
+
       h1 {
-        @extend %text-preset-4;
+        @include text-preset(4);
+        overflow-wrap: anywhere;
         color: $color-white;
+
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+
+        @include from-desktop {
+          @include text-preset(2);
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+        }
+
+        @include from-desktop-xl {
+          -webkit-line-clamp: 3;
+          line-clamp: 3;
+        }
       }
     }
   }
@@ -58,10 +115,15 @@
     justify-content: center;
     margin-block: $space-300;
 
+    @include from-desktop {
+      align-items: start;
+      padding: 1.75rem $space-400; //match Figma
+    }
+
     button {
       flex: 1 1 0;
-      max-width: 6.8125rem;
-      @extend %text-preset-5-regular;
+      max-width: 6.8125rem; //match Figma
+      @include text-preset(5-regular);
       color: $color-purple-500;
       cursor: pointer;
 
@@ -69,11 +131,32 @@
         color: $color-white;
       }
     }
+
+    @include from-tablet {
+      gap: $space-100;
+    }
+
+    @include from-desktop {
+      flex-direction: column;
+      gap: 1.3125rem; // match Fimga
+      margin: 0;
+    }
   }
 
   &__main {
     display: flex;
     flex-direction: column;
     gap: $space-300;
+
+    @include from-tablet {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include from-desktop {
+      gap: $space-400;
+      flex: 1;
+      min-width: 0;
+    }
   }
 }

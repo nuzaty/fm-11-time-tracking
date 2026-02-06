@@ -37,7 +37,7 @@ select {
 }
 
 body {
-  @extend %text-preset-6;
+  @include text-preset(6);
   background: $color-navy-950;
   color: $color-navy-200;
 }

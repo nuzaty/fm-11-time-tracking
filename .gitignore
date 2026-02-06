@@ -29,7 +29,8 @@ npm-debug.log*
 
 # IDEs and editors
 /.idea
-/.vscode
+/.vscode/*
+!.vscode/settings.json
 *.swp
 *.swo
 

@@ -17,3 +17,9 @@
     @content;
   }
 }
+
+@mixin from-desktop-xl {
+  @media (min-width: $bp-xl) {
+    @content;
+  }
+}

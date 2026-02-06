@@ -47,6 +47,7 @@ function appendItem(item) {
   cardContent.append(title);
 
   const actions = document.createElement('button');
+  actions.type = 'button';
   actions.className = 'card__actions';
   actions.setAttribute('aria-label', 'More actions');
   actions.setAttribute('aria-haspopup', 'menu');

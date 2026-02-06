@@ -97,6 +97,7 @@ body {
   .dashboard__context {
     flex: 0 0 22.85%;
     min-width: 0;
+    min-height: 32.5rem;
   }
 }
 .dashboard__profile {

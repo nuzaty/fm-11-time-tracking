@@ -41,6 +41,7 @@
     @include from-desktop {
       flex: 0 0 22.85%;
       min-width: 0;
+      min-height: 32.5rem; // just to prevent small layout shift after DOM populated.
     }
   }
 

@@ -69,7 +69,7 @@ function appendItem(item) {
       switch (period) {
         case 'daily': return `Yesterday - ${previous}hrs`;
         case 'weekly': return `Last Week - ${previous}hrs`;
-        case 'monthly': return `Last Monthasdsadsad - ${previous}hrs`;
+        case 'monthly': return `Last Month - ${previous}hrs`;
         default: return `${current}hrs`;
       }
     }

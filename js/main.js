@@ -4,7 +4,7 @@ const DEFAULT_PERIOD = 'weekly';
 
 let cards = [];
 
-fetch('/data.json').then((response) => {
+fetch('./data.json').then((response) => {
   if (!response.ok) return;
   return response.json();
 }).then((data) => {

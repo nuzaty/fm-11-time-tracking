@@ -23,14 +23,15 @@ npm-debug.log*
 
 # Production
 /build
-/dist
+/dist/*
+!/dist/styles.css
+!/dist/styles.css.map
 /.next
 /out
 
 # IDEs and editors
 /.idea
 /.vscode/*
-!.vscode/settings.json
 *.swp
 *.swo
 

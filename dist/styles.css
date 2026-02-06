@@ -267,15 +267,17 @@ body {
 .card--work .card__icon {
   background-image: url("../images/icon-work.svg");
 }
-.card--work:hover {
-  background: linear-gradient(to bottom, hsl(15, 100%, 70%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+@media (hover: hover) and (pointer: fine) {
+  .card--work:hover {
+    background: linear-gradient(to bottom, hsl(15, 100%, 70%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+  }
 }
-@media (min-width: 48rem) {
+@media (hover: hover) and (pointer: fine) and (min-width: 48rem) {
   .card--work:hover {
     background: linear-gradient(to bottom, hsl(15, 100%, 70%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.0625rem + 0.9375rem) 100%);
   }
 }
-@media (min-width: 64rem) {
+@media (hover: hover) and (pointer: fine) and (min-width: 64rem) {
   .card--work:hover {
     background: linear-gradient(to bottom, hsl(15, 100%, 70%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.8125rem + 0.9375rem) 100%);
   }
@@ -296,15 +298,17 @@ body {
 .card--play .card__icon {
   background-image: url("../images/icon-play.svg");
 }
-.card--play:hover {
-  background: linear-gradient(to bottom, hsl(195, 74%, 62%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+@media (hover: hover) and (pointer: fine) {
+  .card--play:hover {
+    background: linear-gradient(to bottom, hsl(195, 74%, 62%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+  }
 }
-@media (min-width: 48rem) {
+@media (hover: hover) and (pointer: fine) and (min-width: 48rem) {
   .card--play:hover {
     background: linear-gradient(to bottom, hsl(195, 74%, 62%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.0625rem + 0.9375rem) 100%);
   }
 }
-@media (min-width: 64rem) {
+@media (hover: hover) and (pointer: fine) and (min-width: 64rem) {
   .card--play:hover {
     background: linear-gradient(to bottom, hsl(195, 74%, 62%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.8125rem + 0.9375rem) 100%);
   }
@@ -325,15 +329,17 @@ body {
 .card--study .card__icon {
   background-image: url("../images/icon-study.svg");
 }
-.card--study:hover {
-  background: linear-gradient(to bottom, hsl(348, 100%, 68%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+@media (hover: hover) and (pointer: fine) {
+  .card--study:hover {
+    background: linear-gradient(to bottom, hsl(348, 100%, 68%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+  }
 }
-@media (min-width: 48rem) {
+@media (hover: hover) and (pointer: fine) and (min-width: 48rem) {
   .card--study:hover {
     background: linear-gradient(to bottom, hsl(348, 100%, 68%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.0625rem + 0.9375rem) 100%);
   }
 }
-@media (min-width: 64rem) {
+@media (hover: hover) and (pointer: fine) and (min-width: 64rem) {
   .card--study:hover {
     background: linear-gradient(to bottom, hsl(348, 100%, 68%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.8125rem + 0.9375rem) 100%);
   }
@@ -354,15 +360,17 @@ body {
 .card--exercise .card__icon {
   background-image: url("../images/icon-exercise.svg");
 }
-.card--exercise:hover {
-  background: linear-gradient(to bottom, hsl(145, 58%, 55%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+@media (hover: hover) and (pointer: fine) {
+  .card--exercise:hover {
+    background: linear-gradient(to bottom, hsl(145, 58%, 55%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+  }
 }
-@media (min-width: 48rem) {
+@media (hover: hover) and (pointer: fine) and (min-width: 48rem) {
   .card--exercise:hover {
     background: linear-gradient(to bottom, hsl(145, 58%, 55%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.0625rem + 0.9375rem) 100%);
   }
 }
-@media (min-width: 64rem) {
+@media (hover: hover) and (pointer: fine) and (min-width: 64rem) {
   .card--exercise:hover {
     background: linear-gradient(to bottom, hsl(145, 58%, 55%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.8125rem + 0.9375rem) 100%);
   }
@@ -383,15 +391,17 @@ body {
 .card--social .card__icon {
   background-image: url("../images/icon-social.svg");
 }
-.card--social:hover {
-  background: linear-gradient(to bottom, hsl(264, 64%, 52%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+@media (hover: hover) and (pointer: fine) {
+  .card--social:hover {
+    background: linear-gradient(to bottom, hsl(264, 64%, 52%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+  }
 }
-@media (min-width: 48rem) {
+@media (hover: hover) and (pointer: fine) and (min-width: 48rem) {
   .card--social:hover {
     background: linear-gradient(to bottom, hsl(264, 64%, 52%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.0625rem + 0.9375rem) 100%);
   }
 }
-@media (min-width: 64rem) {
+@media (hover: hover) and (pointer: fine) and (min-width: 64rem) {
   .card--social:hover {
     background: linear-gradient(to bottom, hsl(264, 64%, 52%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.8125rem + 0.9375rem) 100%);
   }
@@ -412,15 +422,17 @@ body {
 .card--self-care .card__icon {
   background-image: url("../images/icon-self-care.svg");
 }
-.card--self-care:hover {
-  background: linear-gradient(to bottom, hsl(43, 84%, 65%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+@media (hover: hover) and (pointer: fine) {
+  .card--self-care:hover {
+    background: linear-gradient(to bottom, hsl(43, 84%, 65%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+  }
 }
-@media (min-width: 48rem) {
+@media (hover: hover) and (pointer: fine) and (min-width: 48rem) {
   .card--self-care:hover {
     background: linear-gradient(to bottom, hsl(43, 84%, 65%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.0625rem + 0.9375rem) 100%);
   }
 }
-@media (min-width: 64rem) {
+@media (hover: hover) and (pointer: fine) and (min-width: 64rem) {
   .card--self-care:hover {
     background: linear-gradient(to bottom, hsl(43, 84%, 65%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.8125rem + 0.9375rem) 100%);
   }
@@ -458,9 +470,6 @@ body {
   align-items: center;
   row-gap: 0.5rem;
 }
-.card__content:hover {
-  background: hsl(235, 41%, 34%);
-}
 @media (min-width: 48rem) {
   .card__content {
     grid-template-areas: "title actions" "hrs hrs" "hrs-prev hrs-prev";
@@ -472,6 +481,11 @@ body {
   .card__content {
     padding-block: 1.9375rem;
     padding-inline: 2.03125rem;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .card__content:hover {
+    background: hsl(235, 41%, 34%);
   }
 }
 .card__title {
@@ -496,8 +510,10 @@ body {
   display: block;
   color: hsl(236, 100%, 87%);
 }
-.card__actions:hover svg {
-  color: hsl(0, 100%, 100%);
+@media (hover: hover) and (pointer: fine) {
+  .card__actions:hover svg {
+    color: hsl(0, 100%, 100%);
+  }
 }
 .card__hrs {
   /* base (mobile) */

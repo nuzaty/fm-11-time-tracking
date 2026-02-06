@@ -86,8 +86,10 @@ $card-header-heights: (
         background-image: card-icon($data);
       }
 
-      &:hover {
-        @include card-split-bg(map.get($data, color), $content-bg-hover);
+      @include supports-hover {
+        &:hover {
+          @include card-split-bg(map.get($data, color), $content-bg-hover);
+        }
       }
     }
   }
@@ -130,10 +132,6 @@ $card-header-heights: (
     align-items: center;
     row-gap: $space-100;
 
-    &:hover {
-      background: $content-bg-hover;
-    }
-
     @include from-tablet {
       grid-template-areas:
         'title actions'
@@ -146,6 +144,12 @@ $card-header-heights: (
     @include from-desktop {
       padding-block: 1.9375rem; // match Figma
       padding-inline: 2.03125rem; // match Figma
+    }
+
+    @include supports-hover {
+      &:hover {
+        background: $content-bg-hover;
+      }
     }
   }
 
@@ -167,9 +171,11 @@ $card-header-heights: (
       color: $color-navy-200;
     }
 
-    &:hover {
-      svg {
-        color: $color-white;
+    @include supports-hover {
+      &:hover {
+        svg {
+          color: $color-white;
+        }
       }
     }
   }

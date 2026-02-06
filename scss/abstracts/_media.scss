@@ -23,3 +23,9 @@
     @content;
   }
 }
+
+@mixin supports-hover {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}

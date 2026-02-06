@@ -42,7 +42,7 @@ $text-presets: (
   font-weight: map.get($token, weight);
   line-height: map.get($token, line-height);
 
-  @if map.get($token, letter-spacing) != null {
+  @if map.get($token, letter-spacing) {
     letter-spacing: map.get($token, letter-spacing);
   }
 }

@@ -2,7 +2,7 @@ const DEFAULT_PERIOD = 'weekly';
 
 /* Data fetching & Populating the DOM */
 
-let cards = [];
+const cards = [];
 
 fetch('./data.json').then((response) => {
   if (!response.ok) return;

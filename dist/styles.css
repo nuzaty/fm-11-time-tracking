@@ -253,16 +253,16 @@ body {
   }
 }
 .card--work {
-  background: linear-gradient(to bottom, hsl(15, 100%, 70%) 0 calc(2.375rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.375rem + 0.9375rem) 100%);
+  background: linear-gradient(to bottom, hsl(15, 100%, 70%) 0 3.3125rem, hsl(235, 46%, 20%) 3.3125rem 100%);
 }
 @media (min-width: 48rem) {
   .card--work {
-    background: linear-gradient(to bottom, hsl(15, 100%, 70%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.0625rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(15, 100%, 70%) 0 3rem, hsl(235, 46%, 20%) 3rem 100%);
   }
 }
 @media (min-width: 64rem) {
   .card--work {
-    background: linear-gradient(to bottom, hsl(15, 100%, 70%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.8125rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(15, 100%, 70%) 0 3.75rem, hsl(235, 46%, 20%) 3.75rem 100%);
   }
 }
 .card--work .card__icon {
@@ -270,30 +270,30 @@ body {
 }
 @media (hover: hover) and (pointer: fine) {
   .card--work:hover {
-    background: linear-gradient(to bottom, hsl(15, 100%, 70%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(15, 100%, 70%) 0 3.3125rem, hsl(235, 41%, 34%) 3.3125rem 100%);
   }
 }
 @media (hover: hover) and (pointer: fine) and (min-width: 48rem) {
   .card--work:hover {
-    background: linear-gradient(to bottom, hsl(15, 100%, 70%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.0625rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(15, 100%, 70%) 0 3rem, hsl(235, 41%, 34%) 3rem 100%);
   }
 }
 @media (hover: hover) and (pointer: fine) and (min-width: 64rem) {
   .card--work:hover {
-    background: linear-gradient(to bottom, hsl(15, 100%, 70%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.8125rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(15, 100%, 70%) 0 3.75rem, hsl(235, 41%, 34%) 3.75rem 100%);
   }
 }
 .card--play {
-  background: linear-gradient(to bottom, hsl(195, 74%, 62%) 0 calc(2.375rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.375rem + 0.9375rem) 100%);
+  background: linear-gradient(to bottom, hsl(195, 74%, 62%) 0 3.3125rem, hsl(235, 46%, 20%) 3.3125rem 100%);
 }
 @media (min-width: 48rem) {
   .card--play {
-    background: linear-gradient(to bottom, hsl(195, 74%, 62%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.0625rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(195, 74%, 62%) 0 3rem, hsl(235, 46%, 20%) 3rem 100%);
   }
 }
 @media (min-width: 64rem) {
   .card--play {
-    background: linear-gradient(to bottom, hsl(195, 74%, 62%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.8125rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(195, 74%, 62%) 0 3.75rem, hsl(235, 46%, 20%) 3.75rem 100%);
   }
 }
 .card--play .card__icon {
@@ -301,30 +301,30 @@ body {
 }
 @media (hover: hover) and (pointer: fine) {
   .card--play:hover {
-    background: linear-gradient(to bottom, hsl(195, 74%, 62%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(195, 74%, 62%) 0 3.3125rem, hsl(235, 41%, 34%) 3.3125rem 100%);
   }
 }
 @media (hover: hover) and (pointer: fine) and (min-width: 48rem) {
   .card--play:hover {
-    background: linear-gradient(to bottom, hsl(195, 74%, 62%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.0625rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(195, 74%, 62%) 0 3rem, hsl(235, 41%, 34%) 3rem 100%);
   }
 }
 @media (hover: hover) and (pointer: fine) and (min-width: 64rem) {
   .card--play:hover {
-    background: linear-gradient(to bottom, hsl(195, 74%, 62%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.8125rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(195, 74%, 62%) 0 3.75rem, hsl(235, 41%, 34%) 3.75rem 100%);
   }
 }
 .card--study {
-  background: linear-gradient(to bottom, hsl(348, 100%, 68%) 0 calc(2.375rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.375rem + 0.9375rem) 100%);
+  background: linear-gradient(to bottom, hsl(348, 100%, 68%) 0 3.3125rem, hsl(235, 46%, 20%) 3.3125rem 100%);
 }
 @media (min-width: 48rem) {
   .card--study {
-    background: linear-gradient(to bottom, hsl(348, 100%, 68%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.0625rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(348, 100%, 68%) 0 3rem, hsl(235, 46%, 20%) 3rem 100%);
   }
 }
 @media (min-width: 64rem) {
   .card--study {
-    background: linear-gradient(to bottom, hsl(348, 100%, 68%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.8125rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(348, 100%, 68%) 0 3.75rem, hsl(235, 46%, 20%) 3.75rem 100%);
   }
 }
 .card--study .card__icon {
@@ -332,30 +332,30 @@ body {
 }
 @media (hover: hover) and (pointer: fine) {
   .card--study:hover {
-    background: linear-gradient(to bottom, hsl(348, 100%, 68%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(348, 100%, 68%) 0 3.3125rem, hsl(235, 41%, 34%) 3.3125rem 100%);
   }
 }
 @media (hover: hover) and (pointer: fine) and (min-width: 48rem) {
   .card--study:hover {
-    background: linear-gradient(to bottom, hsl(348, 100%, 68%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.0625rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(348, 100%, 68%) 0 3rem, hsl(235, 41%, 34%) 3rem 100%);
   }
 }
 @media (hover: hover) and (pointer: fine) and (min-width: 64rem) {
   .card--study:hover {
-    background: linear-gradient(to bottom, hsl(348, 100%, 68%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.8125rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(348, 100%, 68%) 0 3.75rem, hsl(235, 41%, 34%) 3.75rem 100%);
   }
 }
 .card--exercise {
-  background: linear-gradient(to bottom, hsl(145, 58%, 55%) 0 calc(2.375rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.375rem + 0.9375rem) 100%);
+  background: linear-gradient(to bottom, hsl(145, 58%, 55%) 0 3.3125rem, hsl(235, 46%, 20%) 3.3125rem 100%);
 }
 @media (min-width: 48rem) {
   .card--exercise {
-    background: linear-gradient(to bottom, hsl(145, 58%, 55%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.0625rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(145, 58%, 55%) 0 3rem, hsl(235, 46%, 20%) 3rem 100%);
   }
 }
 @media (min-width: 64rem) {
   .card--exercise {
-    background: linear-gradient(to bottom, hsl(145, 58%, 55%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.8125rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(145, 58%, 55%) 0 3.75rem, hsl(235, 46%, 20%) 3.75rem 100%);
   }
 }
 .card--exercise .card__icon {
@@ -363,30 +363,30 @@ body {
 }
 @media (hover: hover) and (pointer: fine) {
   .card--exercise:hover {
-    background: linear-gradient(to bottom, hsl(145, 58%, 55%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(145, 58%, 55%) 0 3.3125rem, hsl(235, 41%, 34%) 3.3125rem 100%);
   }
 }
 @media (hover: hover) and (pointer: fine) and (min-width: 48rem) {
   .card--exercise:hover {
-    background: linear-gradient(to bottom, hsl(145, 58%, 55%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.0625rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(145, 58%, 55%) 0 3rem, hsl(235, 41%, 34%) 3rem 100%);
   }
 }
 @media (hover: hover) and (pointer: fine) and (min-width: 64rem) {
   .card--exercise:hover {
-    background: linear-gradient(to bottom, hsl(145, 58%, 55%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.8125rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(145, 58%, 55%) 0 3.75rem, hsl(235, 41%, 34%) 3.75rem 100%);
   }
 }
 .card--social {
-  background: linear-gradient(to bottom, hsl(264, 64%, 52%) 0 calc(2.375rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.375rem + 0.9375rem) 100%);
+  background: linear-gradient(to bottom, hsl(264, 64%, 52%) 0 3.3125rem, hsl(235, 46%, 20%) 3.3125rem 100%);
 }
 @media (min-width: 48rem) {
   .card--social {
-    background: linear-gradient(to bottom, hsl(264, 64%, 52%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.0625rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(264, 64%, 52%) 0 3rem, hsl(235, 46%, 20%) 3rem 100%);
   }
 }
 @media (min-width: 64rem) {
   .card--social {
-    background: linear-gradient(to bottom, hsl(264, 64%, 52%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.8125rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(264, 64%, 52%) 0 3.75rem, hsl(235, 46%, 20%) 3.75rem 100%);
   }
 }
 .card--social .card__icon {
@@ -394,30 +394,30 @@ body {
 }
 @media (hover: hover) and (pointer: fine) {
   .card--social:hover {
-    background: linear-gradient(to bottom, hsl(264, 64%, 52%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(264, 64%, 52%) 0 3.3125rem, hsl(235, 41%, 34%) 3.3125rem 100%);
   }
 }
 @media (hover: hover) and (pointer: fine) and (min-width: 48rem) {
   .card--social:hover {
-    background: linear-gradient(to bottom, hsl(264, 64%, 52%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.0625rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(264, 64%, 52%) 0 3rem, hsl(235, 41%, 34%) 3rem 100%);
   }
 }
 @media (hover: hover) and (pointer: fine) and (min-width: 64rem) {
   .card--social:hover {
-    background: linear-gradient(to bottom, hsl(264, 64%, 52%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.8125rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(264, 64%, 52%) 0 3.75rem, hsl(235, 41%, 34%) 3.75rem 100%);
   }
 }
 .card--self-care {
-  background: linear-gradient(to bottom, hsl(43, 84%, 65%) 0 calc(2.375rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.375rem + 0.9375rem) 100%);
+  background: linear-gradient(to bottom, hsl(43, 84%, 65%) 0 3.3125rem, hsl(235, 46%, 20%) 3.3125rem 100%);
 }
 @media (min-width: 48rem) {
   .card--self-care {
-    background: linear-gradient(to bottom, hsl(43, 84%, 65%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.0625rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(43, 84%, 65%) 0 3rem, hsl(235, 46%, 20%) 3rem 100%);
   }
 }
 @media (min-width: 64rem) {
   .card--self-care {
-    background: linear-gradient(to bottom, hsl(43, 84%, 65%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 46%, 20%) calc(2.8125rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(43, 84%, 65%) 0 3.75rem, hsl(235, 46%, 20%) 3.75rem 100%);
   }
 }
 .card--self-care .card__icon {
@@ -425,17 +425,17 @@ body {
 }
 @media (hover: hover) and (pointer: fine) {
   .card--self-care:hover {
-    background: linear-gradient(to bottom, hsl(43, 84%, 65%) 0 calc(2.375rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.375rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(43, 84%, 65%) 0 3.3125rem, hsl(235, 41%, 34%) 3.3125rem 100%);
   }
 }
 @media (hover: hover) and (pointer: fine) and (min-width: 48rem) {
   .card--self-care:hover {
-    background: linear-gradient(to bottom, hsl(43, 84%, 65%) 0 calc(2.0625rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.0625rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(43, 84%, 65%) 0 3rem, hsl(235, 41%, 34%) 3rem 100%);
   }
 }
 @media (hover: hover) and (pointer: fine) and (min-width: 64rem) {
   .card--self-care:hover {
-    background: linear-gradient(to bottom, hsl(43, 84%, 65%) 0 calc(2.8125rem + 0.9375rem), hsl(235, 41%, 34%) calc(2.8125rem + 0.9375rem) 100%);
+    background: linear-gradient(to bottom, hsl(43, 84%, 65%) 0 3.75rem, hsl(235, 41%, 34%) 3.75rem 100%);
   }
 }
 .card__icon {

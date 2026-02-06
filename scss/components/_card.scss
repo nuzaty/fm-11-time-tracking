@@ -43,8 +43,8 @@ $card-header-heights: (
 @mixin _card-split-bg-at($top, $bottom, $height) {
   background: linear-gradient(
     to bottom,
-    $top 0 calc(#{$height} + #{$card-border-radius}),
-    $bottom calc(#{$height} + #{$card-border-radius}) 100%
+    $top 0 calc($height + $card-border-radius),
+    $bottom calc($height + $card-border-radius) 100%
   );
 }
 
